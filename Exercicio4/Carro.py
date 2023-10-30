@@ -9,10 +9,10 @@ class Carro(Veiculo):
     def calcularAluguel(self, dias):
         if dias <= 30:
             valorAluguel = self.getValor() * dias * 1.1
-            return print(f"Valor do aluguel= {valorAluguel}")
+            return print(f"Valor do aluguel veículo de placa {self.getPlaca()} por {dias} dias= {valorAluguel}")
         else:
             valorAluguel = self.getValor() * dias * 1.2
-            return print(f"Valor do aluguel= {valorAluguel}")
+            return print(f"Valor do aluguel do veículo de placa {self.getPlaca()} por {dias} dias= {valorAluguel}")
 
 
 

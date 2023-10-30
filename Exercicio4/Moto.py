@@ -7,4 +7,4 @@ class Moto(Veiculo):
 
     def calcularAluguel(self, dias):
         valorAluguel = self.getValor() * dias
-        return print(f"Valor do aluguel= {valorAluguel}")
+        return print(f"Valor do aluguel veículo de placa {self.getPlaca()} por {dias} dias= {valorAluguel}")
