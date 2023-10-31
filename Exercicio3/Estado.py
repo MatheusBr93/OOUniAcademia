@@ -16,5 +16,7 @@ class Estado:
     def removerCidade(self, cidade):
         self.__cidade.append(cidade)
 
+    def __str__(self):
+        return self.getNome()
 
 

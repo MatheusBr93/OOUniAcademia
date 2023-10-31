@@ -10,7 +10,8 @@ class Professor(Pessoa):
     def getCurso(self):
         return self.__curso
 
-
+    def __str__(self):
+        return self.getNome()
 
 
 

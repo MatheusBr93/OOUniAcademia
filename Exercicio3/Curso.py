@@ -9,7 +9,7 @@ class Curso:
         self.__professores = []
         self.__escola = Escola()
         self.__coordenador = ""
-        self.__professor = Professor()
+        self.__professor = Professor
 
     def setNome(self, nome):
         self.__nome = nome
@@ -17,8 +17,8 @@ class Curso:
     def getNome(self):
         return self.__nome
 
-    def setCoordenador(self, professor):
-        self.__coordenador = professor
+    def setCoordenador(self, Professor):
+        self.__coordenador = Professor
 
     def getCoordenador(self):
         return self.__coordenador

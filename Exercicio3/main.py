@@ -48,16 +48,16 @@ def main():
     estado1.adicionarCidade(cidade1)
 
     professor1.setNome('Marcos Miguel')
-    professor1.setEscolaridade(mestrado)
+    professor1.setEscolaridade(mestrado.getNivel())
     professor1.setCurso(curso1)
 
     professor2.setNome("Marco Antonio")
-    professor2.setEscolaridade(doutorado)
+    professor2.setEscolaridade(doutorado.getNivel())
     professor2.setCidade(cidade2)
 
 
     professor3.setNome("Lovisi")
-    professor3.setEscolaridade(superior)
+    professor3.setEscolaridade(superior.getNivel())
     professor3.setCurso(curso1)
 
     curso1.setNome("Engenharia de Software")
@@ -87,16 +87,16 @@ def main():
 
 
 
-    print(f"a)A escolaridade do professor |{professor1.getNome()}| é: |{professor1.getEscolaridade().getNivel()}|")
-    print(f"b)A escolaridade do coordenador |{curso1.getCoordenador().getNome()}| do curso de |{curso1.getNome()}| é: |{curso1.getCoordenador().getEscolaridade().getNivel()}|")
-    print(f"c)A escolaridade do diretor |{escola1.getDiretor().getNome()}| da escola |{escola1.getNome()}| é: |{escola1.getDiretor().getEscolaridade().getNivel()}|")
-    print(f"d)O estado de nacionalidade do aluno |{aluno1.getNome()}| é: |{aluno1.getCidade().getEstado().getNome()}|")
-    print(f"e)A cidade de nascimento do professor |{professor2.getNome()}| é: |{professor2.getCidade().getNome()}|")
-    print(f"f)O estado onde o aluno |{aluno2.getNome()}| estuda é: |{aluno2.getCurso().getEscola().getCidade().getEstado().getNome()}|")
-    print(f"g)O tipo de ensino que o professor |{professor3.getNome()}| foi contratado para lesionar é: |{professor3.getCurso().getTipodeEnsino().getNome()}|")
-    print(f"h)O coordenador do curso do aluno |{aluno1.getNome()}| é: |{aluno1.getCurso().getCoordenador().getNome()}|")
-    print(f"i)O diretor do professor |{professor1.getNome()}| é: |{professor1.getCurso().getEscola().getDiretor().getNome()}|")
-    print(f"j)O coordenador do professor |{professor3.getNome()}| é |{professor3.getCurso().getCoordenador().getNome()}|")
+    print(f"a)A escolaridade do professor |{professor1.getNome()}| é: |{professor1.getEscolaridade()}|")
+    print(f"b)A escolaridade do coordenador |{curso1.getCoordenador()}| do curso de |{curso1.getNome()}| é: |{curso1.getCoordenador().getEscolaridade()}|")
+    print(f"c)A escolaridade do diretor |{escola1.getDiretor()}| da escola |{escola1.getNome()}| é: |{escola1.getDiretor().getEscolaridade()}|")
+    print(f"d)O estado de nacionalidade do aluno |{aluno1.getNome()}| é: |{aluno1.getCidade().getEstado()}|")
+    print(f"e)A cidade de nascimento do professor |{professor2.getNome()}| é: |{professor2.getCidade()}|")
+    print(f"f)O estado onde o aluno |{aluno2.getNome()}| estuda é: |{aluno2.getCidade().getEstado()}|")
+    print(f"g)O tipo de ensino que o professor |{professor3.getNome()}| foi contratado para lesionar é: |{professor3.getCurso().getTipodeEnsino()}|")
+    print(f"h)O coordenador do curso do aluno |{aluno1.getNome()}| é: |{aluno1.getCurso().getCoordenador()}|")
+    print(f"i)O diretor do professor |{professor1.getNome()}| é: |{professor1.getCurso().getEscola().getDiretor()}|")
+    print(f"j)O coordenador do professor |{professor3.getNome()}| é |{professor3.getCurso().getCoordenador()}|")
 
 
 

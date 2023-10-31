@@ -7,3 +7,5 @@ class TipoEnsino:
 
     def getNome(self):
         return self.__nome
+    def __str__(self):
+        return self.getNome()

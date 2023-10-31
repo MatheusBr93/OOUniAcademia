@@ -1,3 +1,4 @@
+from Professor import Professor
 class Escola:
     def __init__(self):
         self.__nome = ""
@@ -11,8 +12,8 @@ class Escola:
     def getDiretor(self):
         return self.__diretor
 
-    def setDiretor(self, professor):
-        self.__diretor = professor
+    def setDiretor(self, Professor):
+        self.__diretor = Professor
 
     def setCidade(self, cidade):
         self.__cidade = cidade

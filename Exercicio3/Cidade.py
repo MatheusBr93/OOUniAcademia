@@ -1,3 +1,4 @@
+
 class Cidade:
     def __init__(self):
         self.__nome = ""
@@ -27,3 +28,7 @@ class Cidade:
 
     def removerEscolas(self, nome_da_escola):
         self.__escolas.remove(nome_da_escola)
+
+
+    def __str__(self):
+        return self.getNome()

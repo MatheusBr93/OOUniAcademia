@@ -3,7 +3,7 @@ from Cidade import Cidade
 class Pessoa:
     def __init__(self):
         self.__cidade = Cidade()
-        self.__escolaridade = Escolaridade()
+        self.__escolaridade = Escolaridade
         self.__nome = ""
 
     def setNome(self, nome):
@@ -18,8 +18,8 @@ class Pessoa:
     def getCidade(self):
         return self.__cidade
 
-    def setEscolaridade(self, nivel):
-        self.__escolaridade = nivel
+    def setEscolaridade(self, Escolaridade):
+        self.__escolaridade = Escolaridade
 
     def getEscolaridade(self):
         return self.__escolaridade
