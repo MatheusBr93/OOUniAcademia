@@ -7,3 +7,6 @@ class Escolaridade:
 
     def getNivel(self):
         return self.__nivel
+
+    def __str__(self):
+        return self.getNivel()

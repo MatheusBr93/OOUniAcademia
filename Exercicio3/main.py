@@ -48,16 +48,16 @@ def main():
     estado1.adicionarCidade(cidade1)
 
     professor1.setNome('Marcos Miguel')
-    professor1.setEscolaridade(mestrado.getNivel())
+    professor1.setEscolaridade(mestrado)
     professor1.setCurso(curso1)
 
     professor2.setNome("Marco Antonio")
-    professor2.setEscolaridade(doutorado.getNivel())
+    professor2.setEscolaridade(doutorado)
     professor2.setCidade(cidade2)
 
 
     professor3.setNome("Lovisi")
-    professor3.setEscolaridade(superior.getNivel())
+    professor3.setEscolaridade(superior)
     professor3.setCurso(curso1)
 
     curso1.setNome("Engenharia de Software")
