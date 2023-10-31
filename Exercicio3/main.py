@@ -92,7 +92,7 @@ def main():
     print(f"c)A escolaridade do diretor |{escola1.getDiretor()}| da escola |{escola1.getNome()}| é: |{escola1.getDiretor().getEscolaridade()}|")
     print(f"d)O estado de nacionalidade do aluno |{aluno1.getNome()}| é: |{aluno1.getCidade().getEstado()}|")
     print(f"e)A cidade de nascimento do professor |{professor2.getNome()}| é: |{professor2.getCidade()}|")
-    print(f"f)O estado onde o aluno |{aluno2.getNome()}| estuda é: |{aluno2.getCidade().getEstado()}|")
+    print(f"f)O estado onde o aluno |{aluno2.getNome()}| estuda é: |{aluno2.getCurso().getEscola().getCidade().getEstado()}|")
     print(f"g)O tipo de ensino que o professor |{professor3.getNome()}| foi contratado para lesionar é: |{professor3.getCurso().getTipodeEnsino()}|")
     print(f"h)O coordenador do curso do aluno |{aluno1.getNome()}| é: |{aluno1.getCurso().getCoordenador()}|")
     print(f"i)O diretor do professor |{professor1.getNome()}| é: |{professor1.getCurso().getEscola().getDiretor()}|")
